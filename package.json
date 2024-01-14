@@ -1,29 +1,44 @@
 {
   "name": "modale-adn33",
+  "description": "React customizable Modal plugin",
+  "author": "Adnan El Ghalbzouri",
+  "keywords": [
+    "react",
+    "modal",
+    "plugin"
+  ],
+  "version": "2.0.0",
   "private": false,
-  "version": "0.0.0",
-  "type": "module",
+  "main": "./src/components/modale/Modale.tsx",
+  "exports": {
+    ".": {
+      "import": "./src/components/modale/Modale.tsx",
+      "require": "./src/components/modale/Modale.tsx"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdnanElg/Plugin-Modale-HRnet.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "sass": "^1.69.7",
+    "typescript": "^5.3.3"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
   "devDependencies": {
     "@types/react": "^18.2.43",
-    "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react-swc": "^3.5.0",
     "eslint": "^8.55.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "sass": "^1.69.7",
-    "typescript": "^5.2.2",
     "vite": "^5.0.8"
   }
 }
