@@ -2,12 +2,14 @@ import "./Modale.scss";
 import user from "../../assets/user.svg";
 import close from "../../assets/close.svg";
 
-const Modal = ({
+const Modale = ({
   visible,
   onClose,
+  children,
 }: {
   visible: boolean;
   onClose: () => void;
+  children?: React.ReactNode;
 }) => {
   if (!visible) {
     return null;
@@ -30,19 +32,11 @@ const Modal = ({
           />
           <h3>Confirmation</h3>
           <hr className="modale__content__block1__line"></hr>
-        </div>
-        <div className="modale__content__block2">
-          <p>New collaborator</p>
-          <p>Successfully registered</p>
-          <hr className="modale__content__block2__line"></hr>
-        </div>
-        <div className="modale__content__block3">
-          <button>Add new employée</button>
-          <button>Employées List</button>
+          {children}
         </div>
       </div>
     </div>
   );
 };
 
-export default Modal;
+export default Modale;

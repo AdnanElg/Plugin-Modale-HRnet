@@ -16,7 +16,7 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 0 8px 24px hsla(210, 8%, 62%, 0.2);
-    padding: 50px;
+    padding: 40px;
 
     &__close {
       cursor: pointer;
@@ -34,7 +34,8 @@
       gap: 25px;
 
       &__img {
-        width: 35%;
+        margin-left: 17px;
+        width: 30%;
       }
 
       h3 {
@@ -48,56 +49,6 @@
         border: none;
         width: 200px;
         height: 3px;
-        margin-bottom: 2rem;
-      }
-    }
-
-    &__block2 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      gap: 25px;
-
-      &__line {
-        background-color: #cad3ae;
-        border: none;
-        width: 200px;
-        height: 3px;
-        margin-bottom: 2rem;
-      }
-
-      p {
-        text-align: center;
-        font-size: 18px;
-        font-weight: 500;
-        color: #000;
-      }
-    }
-
-    &__block3 {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: row;
-      gap: 30px;
-
-      button {
-        line-height: 20px;
-        border: none;
-        border: solid 1px #cad3ae;
-        font-size: 15px;
-        font-weight: 900;
-        border-radius: 10px;
-        background-color: #fff;
-        padding: 13px;
-        color: #cad3ae;
-        cursor: pointer;
-      }
-
-      button:hover {
-        background-color: #6c6753;
-        color: #fff;
       }
     }
   }

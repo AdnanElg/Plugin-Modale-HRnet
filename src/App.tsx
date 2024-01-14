@@ -1,4 +1,3 @@
-import Button from "./components/button/Button";
 import Modale from "./components/modale/Modale";
 
 const App = () => {
@@ -10,7 +9,6 @@ const App = () => {
           throw new Error("Function not implemented.");
         }}
       />
-      <Button />
     </main>
   );
 };
