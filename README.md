@@ -11,8 +11,8 @@ Pour installer et utiliser ce composant dans votre projet, vous pouvez utiliser 
 
 Exemple d'utilisation :
 
-import Modale from '@votre-namespace/modale';
-import '@votre-namespace/modale/dist/Modale.css'; // Importez les styles par défaut
+import Modale from "modale-adn33";
+import 'modale-adn33/modale/dist/Modale.css'; // Importez les styles par défaut
 
 
 const VotreComposant = () => {
