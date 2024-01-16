@@ -1,30 +1,57 @@
-# React + TypeScript + Vite
+# Plugin Modale : modale-adn33 - README
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Modale React Component
 
-Currently, two official plugins are available:
+Ce composant React, appelé Modale, offre une fenêtre modale simple et personnalisable pour une utilisation dans vos applications React. Il inclut des fonctionnalités telles qu'un bouton de fermeture, un bloc de confirmation et une structure flexible pour intégrer du contenu supplémentaire.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Installation
 
-## Expanding the ESLint configuration
+Pour installer et utiliser ce composant dans votre projet, vous pouvez utiliser npm. Ouvrez votre terminal et exécutez la commande suivante :
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+```terminale :
+- npm install modale-adn33
 
-- Configure the top-level `parserOptions` property like this:
+## Exemple d'utilisation :
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
+import Modale from '@votre-namespace/modale';
+import '@votre-namespace/modale/dist/Modale.css'; // Importez les styles par défaut
+
+
+const VotreComposant = () => {
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const handleModalClose = () => {
+    setModalVisible(false);
+  };
+
+  return (
+    <div>
+      {/* Le contenu de votre composant ici */}
+      
+      <Modale visible={isModalVisible} onClose={handleModalClose}>
+        {/* Votre contenu personnalisé pour la modale */}
+        <p>Message de confirmation ou contenu supplémentaire ici.</p>
+      </Modale>
+    </div>
+  );
+};
+
+# Propriétés :
+
+visible (boolean, requis) : Détermine si la modale est visible ou non.
+onClose (fonction, requis) : Fonction de rappel pour fermer la modale.
+children (ReactNode) : Contenu supplémentaire à afficher à l'intérieur de la modale.
+
+# Styles :
+
+Le style par défaut est fourni dans le fichier Modale.css. Vous pouvez soit importer ce fichier dans votre projet, soit créer vos propres styles en faisant référence aux noms de classe fournis.
+
+.modale {
+  // Votre style personnalisé ici
 }
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Dépendances :
+
+Ce composant utilise React, assurez-vous donc que React est une dépendance de votre projet.
+
+N'hésitez pas à personnaliser et étendre ce composant pour répondre aux besoins spécifiques de votre projet. Si vous rencontrez des problèmes ou avez des suggestions d'améliorations, veuillez ouvrir un ticket sur le dépôt GitHub. Bon codage !
