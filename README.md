@@ -26,36 +26,11 @@ Terminal:
 
 - npm install modale-adn33
 
-# Exemple d'utilisation :
+### Exemple d'utilisation :
+
+```jsx
 
 ## [fr] :
-
-import Modale from "modale-adn33";
-import { useState } from "react";
-
-const VotreComposant = () => {
-  const [isModalVisible, setModalVisible] = useState(false);
-
-  const handleModalClose = () => {
-    setModalVisible(false);
-  };
-
-return (
-
-  <div>
-    {/_ Le contenu de votre composant ici _/}
-
-    <Modale visible={isModalVisible} onClose={handleModalClose}>
-      {/* Votre contenu personnalisé pour la modale */}
-      <p>Message de confirmation ou contenu supplémentaire ici.</p>
-    </Modale>
-
-  </div>
-)};
-
-## [en] :
-
-Your code is using the modale-adn33 component to create a modal in a React functional component. Here's a exemple:
 
 import Modale from "modale-adn33";
 import { useState } from "react";
@@ -78,6 +53,37 @@ const VotreComposant = () => {
     </div>
 )};
 
+```
+
+## [en] :
+
+Your code is using the modale-adn33 component to create a modal in a React functional component. Here's a exemple:
+
+```jsx
+
+import Modale from "modale-adn33";
+import { useState } from "react";
+
+const VotreComposant = () => {
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const handleModalClose = () => {
+    setModalVisible(false);
+  };
+
+  return (
+    <div>
+      {/_ Le contenu de votre composant ici _/}
+
+      <Modale visible={isModalVisible} onClose={handleModalClose}>
+        {/* Votre contenu personnalisé pour la modale */}
+        <p>Message de confirmation ou contenu supplémentaire ici.</p>
+      </Modale>
+    </div>
+)};
+
+```
+
 # Propriétés :
 
 ## [fr] :
@@ -98,17 +104,25 @@ children (ReactNode): Additional content to be displayed inside the modal.
 
 Le style par défaut est fourni dans le fichier Modale.scss, Vous pouvez soit importer ce fichier dans votre projet, soit créer vos propres styles en faisant référence aux noms de classe fournis.
 
+```scss
+
 .modale {
-// Votre style personnalisé ici
+  // Votre style personnalisé ici
 }
+
+```
 
 ## [en] :
 
 The default style is provided in the Modale.scss file. You can either import this file into your project or create your own styles by referencing the provided class names.
 
+```scss
+
 .modale {
   // Your custom styles here
 }
+
+```
 
 # Dépendances :
 

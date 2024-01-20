@@ -2,6 +2,7 @@
   "name": "modale-adn33",
   "description": "React customizable Modal plugin",
   "author": "Adnan El Ghalbzouri",
+  "license": "ISC",
   "keywords": [
     "react",
     "modal",
