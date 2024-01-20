@@ -8,7 +8,7 @@
     "modal",
     "plugin"
   ],
-  "version": "3.0.3",
+  "version": "0.0.4",
   "private": false,
   "main": "./src/components/modale/Modale.tsx",
   "exports": {
