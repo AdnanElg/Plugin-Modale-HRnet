@@ -88,15 +88,15 @@ const VotreComposant = () => {
 
 ## [fr] :
 
-visible (boolean, requis) : Détermine si la modale est visible ou non.
-onClose (fonction, requis) : Fonction de rappel pour fermer la modale.
-children (ReactNode) : Contenu supplémentaire à afficher à l'intérieur de la modale.
+- visible (boolean, requis) : Détermine si la modale est visible ou non.
+- onClose (fonction, requis) : Fonction de rappel pour fermer la modale.
+- children (ReactNode) : Contenu supplémentaire à afficher à l'intérieur de la modale.
 
 ## [en] :
 
-visible (boolean, required): Determines whether the modal is visible or not.
-onClose (function, required): Callback function to close the modal.
-children (ReactNode): Additional content to be displayed inside the modal.
+- visible (boolean, required): Determines whether the modal is visible or not.
+- onClose (function, required): Callback function to close the modal.
+- children (ReactNode): Additional content to be displayed inside the modal.
 
 # Styles :
 
