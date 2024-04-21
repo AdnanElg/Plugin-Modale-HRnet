@@ -3,21 +3,22 @@ import user from "../../assets/user.svg";
 import close from "../../assets/close.svg";
 
 const Modale = ({
-  visible,
-  onClose,
-  children,
+  visible, // Propriété indiquant si la modale est visible ou non
+  onClose, // Fonction de gestion de la fermeture de la modale
+  children, // Contenu de la modale
 }: {
   visible: boolean;
   onClose: () => void;
   children?: React.ReactNode;
 }) => {
+  // Si la modale n'est pas visible, retourne null
   if (!visible) {
     return null;
   }
-
+  // Retourne la modale avec son contenu si elle est visible
   return (
     <div className="modale">
-      <div className="modale__content">
+      <div className="modale__content" data-testid="modale">
         <img
           className="modale__content__close"
           src={close}
